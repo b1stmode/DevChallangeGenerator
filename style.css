@@ -1,48 +1,53 @@
 h1 {
-    font-family: JetBrains Mono, Fira Code, monospace;
-    font-size: 36px;
-    margin: 20px auto;
+  font-family:
+    JetBrains Mono,
+    Fira Code,
+    monospace;
+  font-size: 36px;
+  margin: 20px auto;
 }
 p {
-
-    font-family: JetBrains Mono, Fira Code, monospace;
-    font-size: 18px;
-    line-height: 1.6;
-    margin: 20px auto;
-    max-width: 600px;
+  font-family:
+    JetBrains Mono,
+    Fira Code,
+    monospace;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 20px auto;
+  max-width: 600px;
 }
 body {
-    font-family: monospace;
-    margin: 0;
-    padding: 0;
-    background-color: #1c1e21;
-    text-align: center;
-    color: #b1afaf;
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #1c1e21;
+  text-align: center;
+  color: #b1afaf;
 }
 
 button {
-    font-family: JetBrains Mono, Fira Code, monospace;
-    font-size: 16px;
-    padding: 10px 20px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #33586b;
-    color: white;
-    cursor: pointer;
-
+  font-family:
+    JetBrains Mono,
+    Fira Code,
+    monospace;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #33586b;
+  color: white;
+  cursor: pointer;
 }
 button:hover {
-    background-color: #1d3a43;
+  background-color: #1d3a43;
 }
 
-
 #challengeList {
-    list-style-type: none;
-    padding: 0;
-    margin: auto;
-    width: 100%;      
-        max-width: 600px; 
-    outline: 1px solid #33586b;
-
+  list-style-type: none;
+  padding: 0;
+  margin: auto;
+  width: 100%;
+  max-width: 600px;
+  outline: 1px solid #33586b;
 }
