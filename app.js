@@ -1,6 +1,8 @@
 const generateButton = document.querySelector("#generateButton");
 const alloptions = document.querySelectorAll("#challengeList .textPart");
 
+const allButtons = document.querySelectorAll("#optoinButton");
+
 const projectIdeas = [
   "Calculator",
   "Weather App",
