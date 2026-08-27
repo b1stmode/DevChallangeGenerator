@@ -11,11 +11,13 @@ const projectIdeas = [
 ];
 
 const handleGenerateClick = () => {
-    console.log("pressed")
-  alloptions.forEach((span, index) => {
-    if (projectIdeas[index]) {
-      span.textContent = projectIdeas[index];
-    }
+  console.log("pressed");
+
+  alloptions.forEach((span) => {
+    const randomIndex = Math.floor(Math.random() * 6);
+    const randomProject = projectIdeas[randomIndex];
+
+    span.textContent = randomProject;
   });
 };
 generateButton.addEventListener("click", handleGenerateClick);
