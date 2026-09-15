@@ -1,7 +1,7 @@
 const generateButton = document.querySelector("#generateButton");
 const alloptions = document.querySelectorAll("#challengeList .textPart");
 
-const allButtons = document.querySelectorAll("#optoinButton");
+const allButtons = document.querySelectorAll(".optionButton");
 
 const projectIdeas = [
   "Calculator",
@@ -25,6 +25,20 @@ const handleGenerateClick = () => {
     const randomProject = projectIdeas[randomIndex];
     span.textContent = randomProject;
     usedIndexes.push(randomIndex)
+
+    
   });
 };
+
 generateButton.addEventListener("click", handleGenerateClick);
+
+const handleOptionClick = (event) => {
+  const button = event.target;
+  const chooseOption = button.parentElement.querySelector(".textPart");
+
+  console.log(chooseOption.textContent);
+}
+
+allButtons.forEach((button) => {
+  button.addEventListener("click", handleOptionClick);
+});
