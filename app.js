@@ -1,32 +1,11 @@
+import { projectIdeas } from "./projects.js";
+
 const generateButton = document.querySelector("#generateButton");
 const alloptions = document.querySelectorAll("#challengeList .textPart");
 
 const allButtons = document.querySelectorAll(".optionButton");
 
 let selectedProject;
-
-const projectIdeas = [
-  {
-    name: "Calculator",
-    description:
-      "A simple calculator app that can perform basic arithmetic operations.",
-    category: "Utility",
-    difficulty: "Easy",
-    tags: ["JavaScript", "HTML", "CSS"],
-  },
-  {
-    name: "Weather App",
-    description:
-      "An app that fetches and displays weather information based on user location.",
-    category: "Utility",
-    difficulty: "Medium",
-    tags: ["JavaScript", "API", "HTML", "CSS"],
-  },
-  "Pomodoro Timer",
-  "Roll a Dice",
-  "Rock, Paper, Scissors",
-  "Simple CLI tool",
-];
 
 const handleGenerateClick = () => {
   console.log("pressed");
