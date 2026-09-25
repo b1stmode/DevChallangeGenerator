@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dev Challenge Generator</title>
     <link rel="stylesheet" href="style.css" />
-        <script type="module" src="app.js"></script>
+    <script type="module" src="app.js"></script>
   </head>
   <body>
     <header>
       <h1>Dev Challenge Generator</h1>
     </header>
+
+    <div id="projectModal">
+      <div id="projectDetails">
+        <h2 id="name">test</h2>
+        <p id="challangeDescription"> </p>
+        <span id="category">Category: [value]</span>
+        <span id="difficulty">Difficulty: [value]</span>
+        <span id="tags">Tags: [values]</span>
+        <button id="leave">Back</button>
+        <button id="choose">Choose challange</button>
+      </div>
+    </div>
 
     <main>
       <p>Dont know what to do? Get inspo for your next project here!</p>
@@ -19,13 +31,16 @@
         <p id="challengeHeader">Your todays challenge options:</p>
         <ul id="challengeList">
           <li>
-            <span class="textPart">option 1 </span> <button class = "optionButton">Choose</button>
+            <span class="textPart">option 1 </span>
+            <button class="optionButton">Choose</button>
           </li>
           <li>
-            <span class="textPart">option 2</span> <button class = "optionButton">Choose</button>
+            <span class="textPart">option 2</span>
+            <button class="optionButton">Choose</button>
           </li>
           <li>
-            <span class="textPart">option 3 </span> <button class = "optionButton">Choose</button>
+            <span class="textPart">option 3 </span>
+            <button class="optionButton">Choose</button>
           </li>
         </ul>
       </div>

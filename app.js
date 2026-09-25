@@ -5,6 +5,14 @@
 
   const allButtons = document.querySelectorAll(".optionButton");
 
+    const challangeName = document.querySelector("#name");
+    const challangeDescription = document.querySelector("#challangeDescription");
+    const challangeCategory = document.querySelector("#category");
+    const challangeDifficulty = document.querySelector("#difficulty");
+    const challangeTags = document.querySelector("#tags");
+    const challangeLeaveButton = document.querySelector("#leave");
+    const challangeChooseButton = document.querySelector("#choose");
+
   let selectedProject;
 
   const handleGenerateClick = () => {
@@ -29,8 +37,13 @@
     const button = event.target;
     const chooseOption = button.parentElement.querySelector(".textPart");
 
-    selectedProject = chooseOption.name;
+    selectedProject = projectIdeas.find((item) => {
+      return item.name === chooseOption.textContent;
+    });
     console.log(selectedProject);
+    challangeName.textContent = selectedProject.name;
+    challangeDescription.textContent = selectedProject.description;
+    challangeCategory.textContent = selectedProject.category;
   };
 
   allButtons.forEach((button) => {
