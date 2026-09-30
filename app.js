@@ -5,7 +5,8 @@
 
   const allButtons = document.querySelectorAll(".optionButton");
 
-    const challangeName = document.querySelector("#name");
+  const challangeModal = document.querySelector("#projectModal");
+  const challangeName = document.querySelector("#name");
     const challangeDescription = document.querySelector("#challangeDescription");
     const challangeCategory = document.querySelector("#category");
     const challangeDifficulty = document.querySelector("#difficulty");
@@ -20,7 +21,7 @@
 
     const usedIndexes = [];
 
-    alloptions.forEach((span) => {
+    alloptions.forEach((span) => {                   //but your lips are venemous poisoooooooooooooooooooooooooooooon
       let randomIndex = Math.floor(Math.random() * 6);
       while (usedIndexes.includes(randomIndex)) {
         randomIndex = Math.floor(Math.random() * 6);
@@ -31,7 +32,7 @@
     });
   };
 
-  generateButton.addEventListener("click", handleGenerateClick);
+  generateButton.addEventListener("click", handleGenerateClick);  
 
   const handleOptionClick = (event) => {
     const button = event.target;
@@ -44,6 +45,9 @@
     challangeName.textContent = selectedProject.name;
     challangeDescription.textContent = selectedProject.description;
     challangeCategory.textContent = selectedProject.category;
+    challangeDifficulty.textContent = selectedProject.difficulty;
+    challangeTags.textContent = selectedProject.tags;
+    challangeModal.classList.remove("hidden");
   };
 
   allButtons.forEach((button) => {
